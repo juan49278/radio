@@ -5,3 +5,14 @@ body {
   background-position: top;
   background-attachment: fixed;
 }
+
+footer {
+  text-align: end;
+  text-align-last: auto;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  background: #141526;
+}
