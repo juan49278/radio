@@ -1,1 +1,7 @@
-
+body {
+  background-image: url('../IMG_0674.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+}
