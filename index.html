@@ -7,14 +7,32 @@
     <link rel="stylesheet" href="./css/bootstrap.css"/>
     <link rel="stylesheet" href="./css/bootstrap.min.css"/>
     <link rel="stylesheet" preload href="./css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <title>Radio en vivo</title>
+    <script src="js/main.js" defer>
+    </script>
 </head>
 
 <body>
 <div class="container mt-2">
-    <h1 class="text-center text-danger mt-2">Radio en vivo</h1>
-    <audio controls autoplay preload="none" src="https://radios.yanapak.org/frigosur"></audio>
+  <h1 class="text-center text-danger mt-2">Radio en vivo</h1>
+  <!-- Player -->
+  <main class="player">
+    <!-- Title -->
+    <h2 class="title" id="title">Disfruta de la mejor música</h2>
+    <!-- Cover -->
+    <img src="https://e1.pxfuel.com/desktop-wallpaper/68/402/desktop-wallpaper-4035-radio-studio-studio.jpg" alt="" class="cover" id="cover">
+    <!-- Audio HTML Media elememt -->
+     <audio preload src="https://radios.yanapak.org/frigosur" id="audio"></audio>
+    <!-- Controls -->
+    <section class="controls">
+      <button class="play">
+        <i id="play" class="fas fa-play">
+        </i>
+        </button>
+     </section>
+  </main>
     <footer class="text-white">
     <p>Diseño y puesta al aire por Juan Martinez <br>
     Copyright 2023, Montevideo Uruguay<br>
