@@ -1,4 +1,5 @@
 body {
+ font-family: 'Raleway'; font-size: 18px;
   background-image: url('../IMG_0674.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -7,12 +8,16 @@ body {
 }
 
 footer {
-  text-align: end;
+  text-align: center;
   text-align-last: auto;
   position: fixed;
   left: 0px;
   bottom: 0px;
-  height: 30px;
+  height: auto;
   width: 100%;
   background: #141526;
+}
+.container {
+  background-color: #141526;
+  opacity: 0.6;
 }
