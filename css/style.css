@@ -17,7 +17,40 @@ footer {
   width: 100%;
   background: #141526;
 }
-.container {
-  background-color: #141526;
-  opacity: 0.6;
+
+.player {
+  min-width: 320px;
+  background-image: linear-gradient(black, gray);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: white;
+  box-shadow: 2px 2px 3px black;
+}
+/* Title */
+.title {
+  margin-top: 0;
+  text-align: center;
+}
+/* Cover */
+.cover {
+  width: 200px;
+  height: auto;
+  border-radius: .3rem;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+  
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+.controls button {
+  background-color: transparent;
+  border: none;
+}
+.controls i {
+  font-size: 1.7rem;
+  color: white;
 }
