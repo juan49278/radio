@@ -17,9 +17,9 @@ footer {
   width: 100%;
   background: #141526;
 }
-
 .player {
   min-width: 320px;
+  width: 340px;
   height: 280px;
   background-image: linear-gradient(black, gray);
   border-radius: 1rem;
