@@ -1,3 +1,6 @@
+addEventListener('DOMContentLoaded', () => {
+  showTime()
+})
 const audio = document.getElementById("audio") 
 const cover = document.getElementById("cover")
 const title = document.getElementById("title")
@@ -26,9 +29,22 @@ function updateControls() {
 function playStation() {
     audio.play()
     updateControls()
+    document.querySelector("span.playing").innerHTML = "Reproduciendo"
   }
   // Pausar canción
   function pauseStation() {
     audio.pause()
     updateControls()
+    document.querySelector("span.playing").innerHTML = "Detenido"
   } 
+function showTime(){
+  myDate = new Date();
+  hours = myDate.getHours();
+  minutes = myDate.getMinutes();
+  seconds = myDate.getSeconds();
+  if (hours < 10) hours = 0 + hours;
+  if (minutes < 10) minutes = "0" + minutes;
+  if (seconds < 10) seconds = "0" + seconds;
+  $("#horaActual").text("Hora Actual:" + " " +hours+ ":" +minutes+ ":" +seconds);
+  setTimeout("showTime()", 1000);
+}
