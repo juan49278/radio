@@ -1,6 +1,5 @@
 addEventListener('DOMContentLoaded', () => {
   showTime()
-  playStation()
 })
 const audio = document.getElementById("audio") 
 const cover = document.getElementById("cover")
