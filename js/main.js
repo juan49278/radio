@@ -4,9 +4,6 @@ addEventListener('DOMContentLoaded', () => {
   novedades()
 })
 
-addEventListener('click', () =>{
-  clean()
-})
 function showTime() {
   myDate = new Date();
   hours = myDate.getHours();
@@ -19,11 +16,6 @@ function showTime() {
   setTimeout("showTime()", 1000);
 }
 
-function clean(){
-  let remove = document.querySelector('div.elfsight-app-bc6bfd50-d9ce-4df4-abcc-48d319ce048d').querySelectorAll('a')
-  $(remove).closest("a").remove()
-
-}
 function novedades() {
   swal({
     title: "Novedades",
