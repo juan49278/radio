@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -17,27 +17,28 @@
 </head>
 
 <body>
+    <script class="script" type="text/javascript">
+        swal("Novedades", "Se agregó un Reproductor secundario para poder escuchar con menos uso de datos. Proximamente se agregará una seccion de contacto para que puedas comunicarte o dejarnos tus comentarios, gracias por escuchar Herz FM", "info")
+      </script>
+      <script type="text/javascript">
+       swal("Importante", "Estamos teniendo problemas con el servidor de transmision se está tratando de solucionar lo mas rapido posible","info") 
+      </script>
   <span id="horaActual" class="text-white text-start"></span>
-  <div class="container mt-2 mb-2">
+  <div class="container mt-2">
     <h1 class="text-danger text-center">Radio en vivo</h1>
     <!-- Player -->
     <main class="mx-auto">
       <!-- Title -->
       <h2 class="text-start text-white" id="title">Disfruta de la mejor música</h2>
-      <iframe title="player-zeno" class="mb-2 mt-2" src="https://zeno.fm/player/herzfm" width="100%" height="250"
-        frameborder="0" scrolling="yes"></iframe><a href="https://zeno.fm/" target="_blank"
-        style="display: block; font-size: 0.9em; line-height: 10px; opacity: 0.7;"></a>
-      <hr>
-      <h5 class="text-white mb-2">Reproductor alternativo:</h5>
-      <audio preload="none" controls="controls" type="media">
-        <source src="https://radios.yanapak.org/frigosur" type="audio/ogg">
-      </audio>
-      <br>
-      <small class="text-white" style="font-size: xx-small">*Buena calidad de audio con menos uso de datos</small>
+      <iframe class="mb-2 mt-2" src="https://zeno.fm/player/herzfm" width="100%" height="250" frameborder="0" scrolling="no"></iframe><a
+        href="https://zeno.fm/" target="_blank" style="display: block; font-size: 0.9em; line-height: 10px; opacity: 0.7;"></a>
+        <hr>
+        <h5 class="text-white mb-2">Reproductor alternativo:</h5>
+        <audio preload="none" controls="controls" type="media"><source src="https://radios.yanapak.org/frigosur" type="audio/ogg"></audio>
+        <br>
+        <small class="text-white" style="font-size: xx-small">*Buena calidad de audio con menos uso de datos</small>
     </main>
-  </div>
-  <div class="footer pt-2 mt-2">
-    <footer class="text-white mt-2">
+    <footer class="text-white">
       <p>Diseño y puesta al aire por Juan Martinez <br>
         Copyright 2023, Montevideo Uruguay<br>
         Todos los derechos reservados
@@ -47,5 +48,4 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>
-
 </html>
