@@ -28,8 +28,3 @@ function novedades() {
     }
   })
 }
-
-if(DOMException){
-  swal("Atencion", "Servidor de tranmision alternativo fuera de servicio. De momento solo podemos transmitir en el servidor 1, en cuanto se solucione volveremos a tener los dos servidores","warning") 
-
-}
