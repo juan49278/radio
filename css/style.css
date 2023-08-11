@@ -17,3 +17,12 @@ footer {
   width: 100%;
   background: #141526;
 }
+
+div.mensajes{
+  background-color: white;
+  border-radius: 0.8rem;
+}
+
+form.needs-validation{
+  border-radius: 0.8rem;
+}
