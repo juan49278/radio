@@ -73,6 +73,6 @@ function publish() {
   nombre = document.getElementById("name").value
   listaComentarios.innerHTML += `
   <li class="list-group-sm">${nombre} <span>dijo:</span><br>
-  <p style="font-size:small;">${text.value}</p>`
+  <p style="font-size:small;">${msg}</p>`
   localStorage.setItem('chats', listaComentarios.innerHTML)
 }
