@@ -18,6 +18,8 @@
             color: white;
             align-items: center;
             text-align: center;
+            width: 290px;
+            height: 590px;
         }
 
         table {
@@ -80,18 +82,18 @@
                     <td class="cssShoutText">
                         <font color="white">e-Mail:</font>
                     </td>
-                    <td align=right><input type=text name="EMail" size=21 maxlength=75 class="cssShoutForm" value="">
+                    <td align=right><input type=text name="EMail" size=21 maxlength=55 class="cssShoutForm" value="">
                     </td>
                 </tr>
                 <tr>
                     <td align=right class="cssShoutText">
                         <font align=left color="white">Mensaje:</font>
                     </td>
-                    <td align=right><input type=button value="Smilies" class="cssShoutButton"
+                    <td align=right><input type=button value="Emojis" class="cssShoutButton"
                             onClick="newWindow('smilies.php', 130, 300, 0, 0, 1)"></td>
                 </tr>
             </table>
-            <textarea name="Text" cols="70" rows="5" wrap=virtual class="cssShoutForm"></textarea>
+            <textarea name="Text" cols="0" rows="5" wrap=virtual class="cssShoutForm"></textarea>
             <table border=0 cellspacing=0 cellpadding=0 width=100%>
                 <tr>
                     <td><input type=button name="Refresh" value="Actualizar" class="cssShoutButton" onClick="this.disabled=false; 
