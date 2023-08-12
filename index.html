@@ -30,44 +30,16 @@
         style="display: block; font-size: 0.9em; line-height: 10px; opacity: 0.7;"></a>
       <hr>
       <h5 class="text-white mb-2">Reproductor alternativo:</h5>
-      <script
-        type="text/javascript">var cstrFreePlayerUid = 581091; var cstrFreePlayerTheme = "yellow"; var cstrFreePlayerColor = "";</script>
-      <script type="text/javascript" src="//corscdn.caster.fm/freeplayer/FreePlanPlayerEmbed.js"></script>
-      <!--   DO NOT REMOVE THE LINKS BELOW, THEY  WILL BE HIDDEN (AND WILL HELP US A LOT)   -->
-      <a id="cstrFreePlayerBL1" href="//www.caster.fm/">Free Shoutcast Hosting</a><a id="cstrFreePlayerBL2"
-        href="//www.caster.fm/">Radio Stream Hosting</a>
-      <div id="cstrFreePlayerDiv"></div>
+      <audio id="audio" controls="controls">
+        <source src="https://freeuk27.listen2myradio.com/live.mp3?typeportmount=s1_35579_stream_487211747" type="audio/aac">
+      </audio>
       <small class="text-white" style="font-size: xx-small">*Calidad regular de audio con menos uso de datos</small>
     </main>
     <div class="container">
       <div class="row">
-        <div class="live-chat col d-inline-flex">
-          <form class="form-control needs-validation" novalidate>
-            <h5 class="mb-2">Chatea con nosotros:</h5>
-            <div class="mb-3">
-              <label for="name" class="form-label">Nombre:</label>
-              <input type="text" class="form-control" id="name" placeholder="Tu nombre" required minlength="4">
-              <div class="invalid-feedback">
-                Debes completar el campo con al menos 4 caracteres
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="text" class="form-label">Mensaje:</label>
-              <textarea class="form-control" id="text" rows="3" required minlength="10"
-                placeholder="Escribe aqui lo que quieras decirnos"></textarea>
-              <div class="invalid-feedback">
-                Debes completar el campo con al menos 10 caracteres
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Publicar</button>
-          </form>
-          <div class="mensajes ms-3 col-5">
-            <h5 class="mt-2 ms-1">Chat en vivo:</h5>
-            <div class="mensajes">
-              <ul class="list-group-sm" id="listaComentarios">
-              </ul>
-            </div>
-          </div>
+        <div class="live-chat col">
+          <h3 class="text-white">Chat</h3>
+          <iframe src="http://freeuk27.listen2myradio.com/chat/frame.php?frameid=3351412" frameborder="0"></iframe>
         </div>
       </div>
     </div>
