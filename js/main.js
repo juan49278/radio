@@ -33,46 +33,14 @@ function novedades() {
   })
 }
 
-(() => {
-  'use strict'
-  const forms = document.querySelectorAll('.needs-validation')
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
-      if (form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-        thankyou()
-        publish()
-        wipe()
-        forms.reset()
-      }
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
-
-function wipe() {
-  document.getElementById("text").value = ""
-  document.getElementById("name").value = ""
-
-}
-function thankyou() {
-  swal({
-    title: "Listo",
-    text: "Gracias por escribirnos",
-    icon: "success"
-  })
-}
-
-function publish() {
-  msg = document.getElementById("text").value
-  nombre = document.getElementById("name").value
-  listaComentarios.innerHTML += `
-  <li class="list-group-sm">${nombre} <span>dijo:</span><br>
-  <p style="font-size:small;">${msg}</p>`
-  localStorage.setItem('chats', listaComentarios.innerHTML)
-}
+chat.addEventListener("click", () =>{
+  if(chat.innerHTML == "Mostrar chat"){
+    collapseExample.classList.remove('d-none')
+    collapseExample.classList.add('d-block')
+    chat.innerHTML = `Ocultar chat`
+  } else {
+    collapseExample.classList.add('d-none')
+    collapseExample.classList.remove('d-block')
+    chat.innerHTML = `Mostrar chat`
+  }
+})
