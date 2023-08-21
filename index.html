@@ -19,8 +19,8 @@
 <body>
   <span id="horaActual" class="text-white text-start"></span>
   <div class="container mt-2">
-    <div class="row d-flex">
-      <div class="col-10">
+    <div class="row">
+      <div class="col">
         <h1 class="text-danger text-center">Radio en vivo</h1>
         <!-- Player -->
         <main class="mx-auto">
@@ -32,26 +32,13 @@
             style="display: block; font-size: 0.9em; line-height: 10px; opacity: 0.7;"></a>
           <hr>
           <h5 class="text-white mb-2">Reproductor alternativo:</h5>
-          <audio preload="none" id="audio" type="media" controls="controls"><source src="https://radios.yanapak.org/frigosur" type="audio/aac"></audio>
-          <br>
+          <!-- Inicio. radio hosting USAstreams.com html5 player -->
+<!-- Licencia: GRATIS-XDF4543ERF -->
+<iframe name="contenedorPlayer" class="cuadroBordeado" allow="autoplay" width="100%" height="75px" marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no  src="https://cp.usastreams.com/pr2g/APPlayerRadioHTML5.aspx?stream=https://radios.yanapak.org/frigosur&fondo=05&formato=ogg&color=14&titulo=2&autoStart=20&vol=0&tipo=201&nombre=Herz+FM+server+2&botonPlay=2&imagen=https://cp.usastreams.com/playerHTML5/img/cover.png&server=https://radios.yanapak.org/status.xslCHUMILLASmount=/frigosur"></iframe>
+<!-- En players responsive puede modificar el weight a sus necesidades, Por favor no modifique el resto del codigo para poder seguir ofreciendo este servicio gratis  -->
+<!-- Fin. USAstreams.com html5 player -->
           <small class="text-white" style="font-size: xx-small">*Calidad regular de audio con menos uso de datos</small>
         </main>
-        </div>
-        <div class="col-2 position-end">
-          <div class="d-none" id="collapseExample">
-              <h3 class="text-white">Chat en vivo</h3>
-              <iframe class="mt-2" style="width: 260px; height: 790px;" src="chat.html" frameborder="0"></iframe>
-          </div>
-      </div>
-      </div>
-    </div>
-    <div class="container mb-5">
-      <div class="row">
-        <div class="live-chat col">
-            <h3 class="text-white">Chat en vivo</h3>
-          <a type="button" class="btn btn-info" id="chat" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Mostrar chat
-          </a>
         </div>
       </div>
     </div>
